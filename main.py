@@ -32,3 +32,22 @@ def collatz_automatise(number_start=1) :
   end_number=collatz(number_start)
   while end_number!=1:
     end_number = collatz(end_number)
+
+
+
+def character_picture_grid (grid):
+  z=""
+  for i in grid:
+    for j in i :
+      print (z+ str(j) + '\n')
+    z+=" "
+
+character_picture_grid([['.', '.', '.', '.', '.', '.'],
+['.', 'O', 'O', '.', '.', '.'],
+['O', 'O', 'O', 'O', '.', '.'],
+['O', 'O', 'O', 'O', 'O', '.'],
+['.', 'O', 'O', 'O', 'O', 'O'],
+['O', 'O', 'O', 'O', 'O', '.'],
+['O', 'O', 'O', 'O', '.', '.'],
+['.', 'O', 'O', '.', '.', '.'],
+['.', '.', '.', '.', '.', '.']])
