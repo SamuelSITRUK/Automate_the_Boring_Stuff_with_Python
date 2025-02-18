@@ -34,14 +34,22 @@ def collatz_automatise(number_start=1) :
     end_number = collatz(end_number)
 
 
+#Chapter 4:lists
 
 def character_picture_grid (grid):
-  z=""
-  for i in grid:
-    for j in i :
-      print (z+ str(j) + '\n')
-    z+=" "
+  width_grid= len(grid[0])
+  height_grid=len(grid)
+  j=0
+  while j <width_grid :
+      i=0
+      to_print=""
+      while i< height_grid :
+        to_print = to_print + grid[i][j]
+        i+=1
+      print(to_print)
+      j+=1 
 
+  
 character_picture_grid([['.', '.', '.', '.', '.', '.'],
 ['.', 'O', 'O', '.', '.', '.'],
 ['O', 'O', 'O', 'O', '.', '.'],
