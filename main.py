@@ -63,8 +63,11 @@ character_picture_grid([['.', '.', '.', '.', '.', '.'],
 
 #Chapter 5: ...
 def Fantasy_Game_Inventory (inventory) :
+  print(Inventory)
+  Tot_items=0
   for k,v in inventory.items() :
     print(k + ' : ' + str(v))
-
+    tot_items+=v
+  print("Total Number of Items : " + str(Tot_items))
 stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
 Fantasy_Game_Inventory(stuff)
