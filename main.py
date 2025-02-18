@@ -1,5 +1,5 @@
 
-##Guess number game from chapter3 : Functions
+#Chapter3 : Functions
 # This is a guess the number game.
 import random
 secretNumber = random.randint(1, 20)
@@ -18,3 +18,11 @@ if guess == secretNumber:
 print('Good job! You guessed my number in ' + str(guessesTaken) + ' guesses!')
 else:
 print('Nope. The number I was thinking of was ' + str(secretNumber))
+
+
+def collatz (number):
+  if number%2==0:
+    print(number//2)
+    return (number//2)
+  else :
+    print (3*number+1)
