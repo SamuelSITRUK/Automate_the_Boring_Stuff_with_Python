@@ -59,3 +59,12 @@ character_picture_grid([['.', '.', '.', '.', '.', '.'],
 ['O', 'O', 'O', 'O', '.', '.'],
 ['.', 'O', 'O', '.', '.', '.'],
 ['.', '.', '.', '.', '.', '.']])
+
+
+#Chapter 5: ...
+def Fantasy_Game_Inventory (inventory) :
+  for k,v in inventory.items() :
+    print(k + ' : ' + str(v))
+
+stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
+Fantasy_Game_Inventory(stuff)
