@@ -27,7 +27,8 @@ def collatz (number):
   else :
     print (3*number+1)
 
-def collatz_automatise(number_start) :
+def collatz_automatise(number_start=1) :
+  number_start=int(input())
   end_number=collatz(number_start)
   while end_number!=1:
     end_number = collatz(end_number)
