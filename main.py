@@ -71,3 +71,14 @@ def Fantasy_Game_Inventory (inventory) :
   print("Total Number of Items : " + str(Tot_items))
 stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
 Fantasy_Game_Inventory(stuff)
+
+
+def addToInventory (loot, stuff):
+  for i in loot :
+    if i in stuff.keys() :
+      stuff[i] +=1
+    else :
+      stuff[i] = 1
+
+addToInventory (loot1, stuff1)
+Fantasy_Game_Inventory(stuff1)
