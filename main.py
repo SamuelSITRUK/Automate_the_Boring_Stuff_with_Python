@@ -82,3 +82,6 @@ def addToInventory (loot, stuff):
 
 addToInventory (loot1, stuff1)
 Fantasy_Game_Inventory(stuff1)
+
+
+#Chapter 6 Manipulating Strings
