@@ -85,3 +85,25 @@ Fantasy_Game_Inventory(stuff1)
 
 
 #Chapter 6 Manipulating Strings
+
+def TablePrinter (UnrulyList) :
+  width_Llist= len(UnrulyList[0])
+  height_Llist=len(UnrulyList)
+  j=0
+  print_List=""
+  while j<width_Llist :
+    i=0
+    to_print=""
+    while i<height_Llist :
+      to_print = to_print + (str(UnrulyList[i][j]) + " ")
+      i+=1
+    print(to_print)
+    j+=1
+
+tableData = [['apples', 'oranges', 'cherries', 'banana'],
+['Alice', 'Bob', 'Carol', 'David'],
+['dogs', 'cats', 'moose', 'goose']]
+
+TablePrinter(tableData)
+
+
