@@ -107,3 +107,9 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
 TablePrinter(tableData)
 
 
+
+
+#Chapter 7 ; Pattern Matching with Regular Expressions
+
+
+#R egular expressions = allow you to specify a pattern of text to search for
