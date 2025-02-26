@@ -112,4 +112,29 @@ TablePrinter(tableData)
 #Chapter 7 ; Pattern Matching with Regular Expressions
 
 
-#R egular expressions = allow you to specify a pattern of text to search for
+#Regular expressions = allow you to specify a pattern of text to search for
+#Project : a tool for finding every phone number and email address in a long web page or document.
+
+#1/ imports necessary and cretation of the regew expression for phone numbers
+'''import pyperclip, re
+phoneRegex = re.compile(r'''(
+(\d{3}|\(\d{3}\))? # area code
+(\s|-|\.)? # separator
+(\d{3}) # first 3 digits
+(\s|-|\.) # separator
+(\d{4}) # last 4 digits
+(\s*(ext|x|ext.)\s*(\d{2,5}))? # extension
+)''', re.VERBOSE)
+'''
+#2/Create EMail Regex
+'''
+# Create email regex.
+emailRegex = re.compile(r'''(
+u [a-zA-Z0-9._%+-]+ # username
+v @ # @ symbol
+w [a-zA-Z0-9.-]+ # domain name
+(\.[a-zA-Z]{2,4}) # dot-something
+)''', re.VERBOSE)
+'''
+
+
