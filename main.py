@@ -181,3 +181,10 @@ Mexico': 'Santa Fe', 'New York': 'Albany', 'North Carolina': 'Raleigh',
 'Nashville', 'Texas': 'Austin', 'Utah': 'Salt Lake City', 'Vermont':
 'Montpelier', 'Virginia': 'Richmond', 'Washington': 'Olympia', 'West
 Virginia': 'Charleston', 'Wisconsin': 'Madison', 'Wyoming': 'Cheyenne'}
+
+
+for quizNum in range(35):
+# TODO: Create the quiz and answer key files.
+# TODO: Write out the header for the quiz.
+# TODO: Shuffle the order of the states.
+# TODO: Loop through all 50 states, making a question for each.
