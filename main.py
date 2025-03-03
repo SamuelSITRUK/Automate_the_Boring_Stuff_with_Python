@@ -214,5 +214,18 @@ x random.shuffle(states)
 # TODO: Loop through all 50 states, making a question for each.
 
 
-
+ Loop through all 50 states, making a question for each.
+for questionNum in range(50):
+--snip--
+  # Write the question and the answer options to the quiz file.
+  quizFile.write('%s. What is the capital of %s?\n' % (questionNum + 1,
+    states[questionNum]))
+  for i in range(4):
+    quizFile.write(' %s. %s\n' % ('ABCD'[i], answerOptions[i]))
+  quizFile.write('\n')
+  # Write the answer key to a file.
+  answerKeyFile.write('%s. %s\n' % (questionNum + 1, 'ABCD'[
+    answerOptions.index(correctAnswer)]))
+quizFile.close()
+answerKeyFile.close()
 
